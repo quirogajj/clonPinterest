@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+    margin: 0 auto;
+    padding: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+}
+
+/* HEADER */
+
+#header {
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    
+}
+
+#navbar-pinterest {
+    margin: 5px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#logo {
+    width: 30px;
+    height: 30px;
+    margin-left: 30px
+}
+
+.btn-nav {
+    margin-left: 15px;
+    width: 5%;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.btn-nav a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.btn-nav.index {
+    border: transparent;
+    background-color: black;
+}
+
+.btn-nav.index a {
+    color: white;
+}
+
+.btn-nav.hoy {
+    background-color: transparent;
+    border: transparent;
+    margin-left: 0;
+}
+
+.btn-nav.hoy a {
+    color: black;
+}
+
+.btn-nav.hoy:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+.finder {
+    width: 65%;
+    height: 50px;
+    margin-right: 5%;
+    border-radius: 25px;
+    color: gray;
+    background-color: rgb(238, 238, 238);
+    border: 1px solid transparent;
+}
+
+.finder:hover {
+    background-color: lightgray;
+}
+
+.finder:focus {
+    border: 7px solid lightblue;
+}
+
+.finder:active {
+    border: 2px solid lightblue;
+}
+
+.icon {
+    width: 30%;
+    height: 30px;
+}
+
+.icon:hover {
+    transform:scale(1.1);
+}
+
+
+/* MAIN CONTENT */
+
+#content {
+    margin: 0;
+    margin-top: 5%;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 20%);
+    grid-template-rows: repeat(8, 400px);
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.img img {
+    border: 1px solid lightgray;
+    border-radius: 15px;
+}
+
+.img:hover {
+    transform: scale(1.02);
+}
